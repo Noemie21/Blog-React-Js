@@ -13,6 +13,7 @@ import CategoriesPage from './Pages/CategoriesPage';
 
 function App() {
   return (
+    <BrowserRouter>
     <StoreProvider>
 
       <Navbar bg="dark" expand="lg" variant="dark">
@@ -32,7 +33,7 @@ function App() {
         </Container>
       </Navbar>
       
-      <BrowserRouter>
+      
           <Routes>
             <Route path="/signin" element={<SignInPage/>} > </Route>
             <Route path="/login" element={<LoginPage/>} > </Route>
@@ -41,9 +42,10 @@ function App() {
             <Route path="/articles/:id" element={<SingleArticlePage/>} > </Route>
             <Route path="/articles/categories" element={<CategoriesPage/>} > </Route>
           </Routes>
-      </BrowserRouter>
+      
 
     </StoreProvider>
+    </BrowserRouter>
   );
 }
 
