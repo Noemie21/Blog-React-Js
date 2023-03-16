@@ -8,6 +8,7 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 import ArticlesPage from './Pages/ArticlesPage';
 import SingleArticlePage from './Pages/SingleArticlePage';
 import CategoriesPage from './Pages/CategoriesPage';
+import TestPage from './Pages/TestPage'
 
 
 
@@ -27,7 +28,7 @@ function App() {
               <Nav.Link href="/user">User</Nav.Link>
               <Nav.Link href="/articles">Articles</Nav.Link>
               <Nav.Link href="/articles/categories">Categories</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="/test">Test</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -41,6 +42,7 @@ function App() {
             <Route path="/articles" element={<ArticlesPage/>} > </Route>
             <Route path="/articles/:id" element={<SingleArticlePage/>} > </Route>
             <Route path="/articles/categories" element={<CategoriesPage/>} > </Route>
+            <Route path="/test" element={<TestPage/>} > </Route>
           </Routes>
       
 
